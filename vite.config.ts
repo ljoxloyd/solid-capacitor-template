@@ -9,11 +9,11 @@ export default defineConfig({
         emptyOutDir: true,
     },
     plugins: [
-        solid()
+        solid(),
     ],
     resolve: {
         alias: {
-            "#styles": './shared/styles'
+            "#styles": './shared/styles',
         }
     }
 });
