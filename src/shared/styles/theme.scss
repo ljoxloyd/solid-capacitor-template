@@ -1,0 +1,11 @@
+@use 'utils' as *;
+
+:root {
+    --font-prime: "comic-sans"
+}
+
+html, body {
+    background-color: black;
+    color: white;
+    font-size: 16px;
+}

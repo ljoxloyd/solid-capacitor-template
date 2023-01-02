@@ -18,11 +18,17 @@
     "@capacitor/core": "latest",
     "@capacitor/ios": "^4.6.1",
     "@capacitor/splash-screen": "latest",
-    "typescript": "^4.9.4"
+    "normalize.css": "^8.0.1",
+    "reset.css": "^2.0.2",
+    "solid-js": "^1.6.6"
   },
   "devDependencies": {
     "@capacitor/cli": "latest",
-    "vite": "^2.9.13"
+    "babel-preset-solid": "^1.6.6",
+    "sass": "^1.57.1",
+    "typescript": "^4.9.4",
+    "vite": "^2.9.13",
+    "vite-plugin-solid": "^2.5.0"
   },
   "author": "",
   "license": "ISC"
