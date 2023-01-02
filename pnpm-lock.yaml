@@ -7,7 +7,9 @@ specifiers:
   '@capacitor/core': latest
   '@capacitor/ios': ^4.6.1
   '@capacitor/splash-screen': latest
+  '@iconify-icon/solid': ^1.0.2
   babel-preset-solid: ^1.6.6
+  bi: link:@types/@iconify-icons/bi
   normalize.css: ^8.0.1
   reset.css: ^2.0.2
   rxjs: ^7.8.0
@@ -23,6 +25,7 @@ dependencies:
   '@capacitor/core': 4.6.1
   '@capacitor/ios': 4.6.1_@capacitor+core@4.6.1
   '@capacitor/splash-screen': 4.1.2_@capacitor+core@4.6.1
+  bi: link:@types/@iconify-icons/bi
   normalize.css: 8.0.1
   reset.css: 2.0.2
   rxjs: 7.8.0
@@ -30,6 +33,7 @@ dependencies:
 
 devDependencies:
   '@capacitor/cli': 4.6.1
+  '@iconify-icon/solid': 1.0.2_solid-js@1.6.6
   babel-preset-solid: 1.6.6_@babel+core@7.20.7
   sass: 1.57.1
   typescript: 4.9.4
@@ -425,6 +429,19 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /@iconify-icon/solid/1.0.2_solid-js@1.6.6:
+    resolution: {integrity: sha512-xmsaohZZWUvaxVLYoVFncIz0DZKgGkAPeDjN4Q55wF2l5KXcgGaNlup7h/3ORNknACXKuIzqdd7GRWbur9pwyg==}
+    peerDependencies:
+      solid-js: '>=1'
+    dependencies:
+      iconify-icon: 1.0.2
+      solid-js: 1.6.6
+    dev: true
+
+  /@iconify/types/2.0.0:
+    resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
+    dev: true
 
   /@ionic/cli-framework-output/2.2.5:
     resolution: {integrity: sha512-YeDLTnTaE6V4IDUxT8GDIep0GuRIFaR7YZDLANMuuWJZDmnTku6DP+MmQoltBeLmVvz1BAAZgk41xzxdq6H2FQ==}
@@ -1117,6 +1134,12 @@ packages:
 
   /html-entities/2.3.2:
     resolution: {integrity: sha512-c3Ab/url5ksaT0WyleslpBEthOzWhrjQbg75y7XUsfSzi3Dgzt0l8w5e7DylRn15MTlMMD58dTfzddNS2kcAjQ==}
+    dev: true
+
+  /iconify-icon/1.0.2:
+    resolution: {integrity: sha512-mehAvz2a4eUAlPo76Wul4zzsPNr3hbOHiauMhPrTVIdLOt0AnccnNloh1EeTO3tYeBv7iaJZfdCPHczvi+CkXQ==}
+    dependencies:
+      '@iconify/types': 2.0.0
     dev: true
 
   /immutable/4.2.1:

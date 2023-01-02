@@ -1,5 +1,5 @@
 import './index.scss'
 import { render } from "solid-js/web"
-import SolidApp from "./features/SolidApp"
+import App from "./features/App"
 
-render(SolidApp, window.appRoot)
+render(App, window.appRoot)
