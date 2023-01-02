@@ -1,5 +1,5 @@
 import { SplashScreen } from '@capacitor/splash-screen';
-import { Camera } from '@capacitor/camera';
+import { Camera, CameraResultType } from '@capacitor/camera';
 
 window.customElements.define(
   'capacitor-welcome',
@@ -92,18 +92,18 @@ window.customElements.define(
     connectedCallback() {
       const self = this;
 
-      self.shadowRoot.querySelector('#take-photo').addEventListener('click', async function (e) {
+      self.shadowRoot!.querySelector('#take-photo')!.addEventListener('click', async function (e) {
         try {
           const photo = await Camera.getPhoto({
-            resultType: 'uri',
+            resultType: CameraResultType.Uri,
           });
 
-          const image = self.shadowRoot.querySelector('#image');
+          const image = self.shadowRoot!.querySelector('#image') as HTMLImageElement;
           if (!image) {
             return;
           }
 
-          image.src = photo.webPath;
+          image.src = photo.webPath!;
         } catch (e) {
           console.warn('User cancelled', e);
         }

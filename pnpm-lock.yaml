@@ -7,6 +7,7 @@ specifiers:
   '@capacitor/core': latest
   '@capacitor/ios': ^4.6.1
   '@capacitor/splash-screen': latest
+  typescript: ^4.9.4
   vite: ^2.9.13
 
 dependencies:
@@ -15,6 +16,7 @@ dependencies:
   '@capacitor/core': 4.6.1
   '@capacitor/ios': 4.6.1_@capacitor+core@4.6.1
   '@capacitor/splash-screen': 4.1.2_@capacitor+core@4.6.1
+  typescript: 4.9.4
 
 devDependencies:
   '@capacitor/cli': 4.6.1
@@ -938,6 +940,12 @@ packages:
 
   /tslib/2.4.1:
     resolution: {integrity: sha512-tGyy4dAjRIEwI7BzsB0lynWgOpfqjUdq91XXAlIWD2OwKBH7oCl/GZG/HT4BOHrTlPMOASlMQ7veyTqpmRcrNA==}
+
+  /typescript/4.9.4:
+    resolution: {integrity: sha512-Uz+dTXYzxXXbsFpM86Wh3dKCxrQqUcVMxwU54orwlJjOpO3ao8L7j5lH+dWfTwgCwIuM9GQ2kvVotzYJMXTBZg==}
+    engines: {node: '>=4.2.0'}
+    hasBin: true
+    dev: false
 
   /universalify/2.0.0:
     resolution: {integrity: sha512-hAZsKq7Yy11Zu1DE0OzWjw7nnLZmJZYTDZZyEFHZdUhV8FkH5MCfoU1XMaxXovpyW5nq5scPqq0ZDP9Zyl04oQ==}

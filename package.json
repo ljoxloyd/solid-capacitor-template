@@ -17,7 +17,8 @@
     "@capacitor/camera": "latest",
     "@capacitor/core": "latest",
     "@capacitor/ios": "^4.6.1",
-    "@capacitor/splash-screen": "latest"
+    "@capacitor/splash-screen": "latest",
+    "typescript": "^4.9.4"
   },
   "devDependencies": {
     "@capacitor/cli": "latest",
