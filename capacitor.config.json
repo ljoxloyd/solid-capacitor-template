@@ -1,0 +1,11 @@
+{
+  "appId": "com.example.app",
+  "appName": "rsn-template",
+  "bundledWebRuntime": true,
+  "webDir": "dist",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  }
+}
