@@ -17,8 +17,11 @@ export default defineConfig({
         })
     ],
     resolve: {
+        // Caution! When updating aliases don't forget to update tsconfig.json
         alias: {
             "#styles": './shared/styles',
+            '#icons': './assets/icons',
+            '#imgs': './assets/imgs',
         }
     }
 });
