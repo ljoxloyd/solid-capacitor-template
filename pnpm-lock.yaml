@@ -9,7 +9,6 @@ specifiers:
   '@capacitor/splash-screen': latest
   '@iconify-icon/solid': ^1.0.2
   babel-preset-solid: ^1.6.6
-  bi: link:@types/@iconify-icons/bi
   normalize.css: ^8.0.1
   reset.css: ^2.0.2
   rxjs: ^7.8.0
@@ -17,6 +16,7 @@ specifiers:
   solid-js: ^1.6.6
   typescript: ^4.9.4
   vite: ^2.9.13
+  vite-plugin-sass-dts: ^1.2.9
   vite-plugin-solid: ^2.5.0
 
 dependencies:
@@ -25,7 +25,6 @@ dependencies:
   '@capacitor/core': 4.6.1
   '@capacitor/ios': 4.6.1_@capacitor+core@4.6.1
   '@capacitor/splash-screen': 4.1.2_@capacitor+core@4.6.1
-  bi: link:@types/@iconify-icons/bi
   normalize.css: 8.0.1
   reset.css: 2.0.2
   rxjs: 7.8.0
@@ -38,6 +37,7 @@ devDependencies:
   sass: 1.57.1
   typescript: 4.9.4
   vite: 2.9.15_sass@1.57.1
+  vite-plugin-sass-dts: 1.2.9_eedxomhsm7p3fwx5xp4hbme6ly
   vite-plugin-solid: 2.5.0_solid-js@1.6.6+vite@2.9.15
 
 packages:
@@ -705,6 +705,11 @@ packages:
 
   /buffer-crc32/0.2.13:
     resolution: {integrity: sha512-VO9Ht/+p3SN7SKWqcrgEzjGbRSJYTx+Q1pTQC0wrWqHx0vpJraQ6GtHx8tvcg1rlK1byhU5gccxgOgj7B0TDkQ==}
+    dev: true
+
+  /camelcase-css/2.0.1:
+    resolution: {integrity: sha512-QOSvevhslijgYwRx6Rv7zKdMF8lbRmx+uQGx2+vDc+KI/eBnsy9kit5aj23AgGu3pa4t9AgwbnXWqS+iOY+2aA==}
+    engines: {node: '>= 6'}
     dev: true
 
   /caniuse-lite/1.0.30001441:
@@ -1400,6 +1405,16 @@ packages:
       xmlbuilder: 15.1.1
     dev: true
 
+  /postcss-js/4.0.0_postcss@8.4.20:
+    resolution: {integrity: sha512-77QESFBwgX4irogGVPgQ5s07vLvFqWr228qZY+w6lW599cRlK/HmnlivnnVUxkjHnCu4J16PDMHcH+e+2HbvTQ==}
+    engines: {node: ^12 || ^14 || >= 16}
+    peerDependencies:
+      postcss: ^8.3.3
+    dependencies:
+      camelcase-css: 2.0.1
+      postcss: 8.4.20
+    dev: true
+
   /postcss/8.4.20:
     resolution: {integrity: sha512-6Q04AXR1212bXr5fh03u8aAwbLxAQNGQ/Q1LNa0VfOI06ZAlhPHtQvE4OIdpj4kLThXilalPnmDSOD65DcHt+g==}
     engines: {node: ^10 || ^12 || >=14}
@@ -1407,6 +1422,12 @@ packages:
       nanoid: 3.3.4
       picocolors: 1.0.0
       source-map-js: 1.0.2
+    dev: true
+
+  /prettier/2.8.1:
+    resolution: {integrity: sha512-lqGoSJBQNJidqCHE80vqZJHWHRFoNYsSpP9AjFhlhi9ODCJA541svILes/+/1GM3VaL/abZi7cpFzOpdR9UPKg==}
+    engines: {node: '>=10.13.0'}
+    hasBin: true
     dev: true
 
   /prompts/2.4.2:
@@ -1658,6 +1679,20 @@ packages:
 
   /util-deprecate/1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
+    dev: true
+
+  /vite-plugin-sass-dts/1.2.9_eedxomhsm7p3fwx5xp4hbme6ly:
+    resolution: {integrity: sha512-rWLJNNV8rDE7ZsmTXKQ84BNWdwpGu8S85Sl7aUw6xRLH/Po3BA6vAzzRTOC9t7izJaHQi0S23S0hmh0O4/I+7g==}
+    engines: {node: 18.12.1}
+    peerDependencies:
+      postcss: ^8
+      prettier: ^2.7
+      sass: '*'
+    dependencies:
+      postcss: 8.4.20
+      postcss-js: 4.0.0_postcss@8.4.20
+      prettier: 2.8.1
+      sass: 1.57.1
     dev: true
 
   /vite-plugin-solid/2.5.0_solid-js@1.6.6+vite@2.9.15:

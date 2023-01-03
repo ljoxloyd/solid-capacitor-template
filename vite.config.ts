@@ -1,5 +1,7 @@
+import path from 'path'
 import { defineConfig } from 'vite';
 import solid from 'vite-plugin-solid'
+import sassDts from 'vite-plugin-sass-dts'
 
 export default defineConfig({
     root: './src',
@@ -10,6 +12,9 @@ export default defineConfig({
     },
     plugins: [
         solid(),
+        sassDts({
+            enabledMode: ['development', 'production'],
+        })
     ],
     resolve: {
         alias: {

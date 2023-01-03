@@ -1,6 +1,6 @@
 import { SplashScreen } from "@capacitor/splash-screen"
 import { onMount } from "solid-js"
-import { Icon } from '@iconify-icon/solid'
+import Header from "../shared/components/Header"
 
 export default function App() {
     onMount(() => {
@@ -9,8 +9,6 @@ export default function App() {
     })
 
     return <>
-        <h1 class="flex"> Solid App <Icon icon="vscode-icons:file-type-bun" width="2em" /> </h1>
+        <Header text="Solid App" />
     </>
 }
-
-
