@@ -1,7 +1,6 @@
-import path from 'path'
 import { defineConfig } from 'vite';
+import { vanillaExtractPlugin } from '@vanilla-extract/vite-plugin';
 import solid from 'vite-plugin-solid'
-import sassDts from 'vite-plugin-sass-dts'
 
 export default defineConfig({
     root: './src',
@@ -12,9 +11,7 @@ export default defineConfig({
     },
     plugins: [
         solid(),
-        sassDts({
-            enabledMode: ['development', 'production'],
-        })
+        vanillaExtractPlugin()
     ],
     resolve: {
         // Caution! When updating aliases don't forget to update tsconfig.json

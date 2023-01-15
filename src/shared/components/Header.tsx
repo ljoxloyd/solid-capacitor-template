@@ -1,8 +1,10 @@
 import { Icon } from '@iconify-icon/solid'
-import cls from './Header/Header.module.scss'
+import clsx from 'clsx'
+import * as theme from '../styles/theme.css'
+import * as cls from './Header/Header.css'
 
 export default function Header(props: {
     text: string
 }) {
-    return <h1 class={"flex " + cls.text}> {props.text} <Icon icon="vscode-icons:file-type-bun" width="2em" /> </h1>
+    return <h1 class={clsx(theme.flexRow, cls.text)}> {props.text} <Icon icon="vscode-icons:file-type-bun" width="2em" /> </h1>
 }
